@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		ReadME.md = ReadME.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.Data", "WebApplication.Data\WebApplication.Data.csproj", "{9CADAE53-CC74-4E83-B509-A226AD85F1F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.Application", "WebApplication.Application\WebApplication.Application.csproj", "{EBFA95CE-C91B-4A53-B9D7-93C9D9FBC910}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,14 @@ Global
 		{D617EF5D-2E7E-486E-9176-2F6DAAB4AF65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D617EF5D-2E7E-486E-9176-2F6DAAB4AF65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D617EF5D-2E7E-486E-9176-2F6DAAB4AF65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CADAE53-CC74-4E83-B509-A226AD85F1F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CADAE53-CC74-4E83-B509-A226AD85F1F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CADAE53-CC74-4E83-B509-A226AD85F1F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CADAE53-CC74-4E83-B509-A226AD85F1F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBFA95CE-C91B-4A53-B9D7-93C9D9FBC910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBFA95CE-C91B-4A53-B9D7-93C9D9FBC910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBFA95CE-C91B-4A53-B9D7-93C9D9FBC910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBFA95CE-C91B-4A53-B9D7-93C9D9FBC910}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
