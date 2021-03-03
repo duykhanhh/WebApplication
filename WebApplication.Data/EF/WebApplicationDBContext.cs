@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using WebApplication.Data.Configurations;
 using WebApplication.Data.Entities;
+using WebApplication.Data.Extensions;
 
 namespace WebApplication.Data.EF
 {
@@ -16,6 +17,7 @@ namespace WebApplication.Data.EF
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //configure using fluent API
             modelBuilder.ApplyConfiguration(new AppConfigConfiguration());
             modelBuilder.ApplyConfiguration(new CartConfiguration());
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
@@ -31,6 +33,12 @@ namespace WebApplication.Data.EF
             modelBuilder.ApplyConfiguration(new TransactionConfiguration());
 
 
+            //Data seeding
+            //modelBuilder.Entity<AppConfig>().HasData(
+            //    new AppConfig() { Key = "Home Title", Value = "This is home title" },
+            //    new AppConfig() { Key = "HomeKeyword", Value = "This is home keyword" }
+            //    );
+            modelBuilder.Seed();
             //base.OnModelCreating(modelBuilder);
         }
 
