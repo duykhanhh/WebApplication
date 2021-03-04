@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApplication.Data.EF;
 
 namespace WebApplication.Data.Migrations
 {
     [DbContext(typeof(WebApplicationDBContext))]
-    partial class WebApplicationDBContextModelSnapshot : ModelSnapshot
+    [Migration("20210304030113_AddProductImageTable")]
+    partial class AddProductImageTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -173,7 +175,7 @@ namespace WebApplication.Data.Migrations
                         new
                         {
                             Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
-                            ConcurrencyStamp = "45e3c6fb-9f93-48ed-932a-9bec6c865ee7",
+                            ConcurrencyStamp = "8b2c7909-c4e9-4bd4-bd23-1c8a782bfafd",
                             Description = "Administrator role",
                             Name = "admin",
                             NormalizedName = "admin"
@@ -246,7 +248,7 @@ namespace WebApplication.Data.Migrations
                         {
                             Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "256ef525-e7ec-4701-a262-26c29ace428c",
+                            ConcurrencyStamp = "e15d9a36-eaaa-4aa4-9b66-0dea9fb87a1e",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "tedu.international@gmail.com",
                             EmailConfirmed = true,
@@ -255,7 +257,7 @@ namespace WebApplication.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "tedu.international@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAECq0Ic1OCO1H9XjP652JN7TOJ67L5o5pIXdF43T7JPqQsV47KdTcVnXwtfsMYpeWJQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAED4pb+4U2Pu/hvoFjD8Hx+CYMRI9z8d9TVFtes/rQ7OSnI8KYhnu8A7pNh85sS9efg==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -597,7 +599,7 @@ namespace WebApplication.Data.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(2021, 3, 4, 11, 31, 56, 334, DateTimeKind.Local).AddTicks(8394),
+                            DateCreated = new DateTime(2021, 3, 4, 10, 1, 12, 505, DateTimeKind.Local).AddTicks(3046),
                             OriginalPrice = 100000m,
                             Price = 200000m,
                             Stock = 0,
@@ -622,8 +624,8 @@ namespace WebApplication.Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("datetime2");
 
-                    b.Property<long>("FileSize")
-                        .HasColumnType("bigint");
+                    b.Property<int>("FileSize")
+                        .HasColumnType("int");
 
                     b.Property<string>("ImagePath")
                         .IsRequired()
