@@ -3,16 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{D617EF5D-2E7E-486E-9176-2F6DAAB4AF65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication", "WebApplication\WebApplication.csproj", "{D617EF5D-2E7E-486E-9176-2F6DAAB4AF65}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F2C710EC-2DBD-4C1F-9743-B6DABE65756C}"
 	ProjectSection(SolutionItems) = preProject
 		ReadME.md = ReadME.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.Data", "WebApplication.Data\WebApplication.Data.csproj", "{9CADAE53-CC74-4E83-B509-A226AD85F1F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.Data", "WebApplication.Data\WebApplication.Data.csproj", "{9CADAE53-CC74-4E83-B509-A226AD85F1F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.Application", "WebApplication.Application\WebApplication.Application.csproj", "{EBFA95CE-C91B-4A53-B9D7-93C9D9FBC910}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.Application", "WebApplication.Application\WebApplication.Application.csproj", "{EBFA95CE-C91B-4A53-B9D7-93C9D9FBC910}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.Utilities", "WebApplication.Utilities\WebApplication.Utilities.csproj", "{E3C8D1BA-7A6F-4F5F-89C5-9C52AAA42760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.ViewModels", "WebApplication.ViewModels\WebApplication.ViewModels.csproj", "{C5C7FFEE-432A-49A5-B0FC-24AFAA9B9413}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.BackendApi", "WebApplication.BackendApi\WebApplication.BackendApi.csproj", "{704595E1-6112-4406-8E9D-D1C03EC1C2F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +38,18 @@ Global
 		{EBFA95CE-C91B-4A53-B9D7-93C9D9FBC910}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBFA95CE-C91B-4A53-B9D7-93C9D9FBC910}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBFA95CE-C91B-4A53-B9D7-93C9D9FBC910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3C8D1BA-7A6F-4F5F-89C5-9C52AAA42760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3C8D1BA-7A6F-4F5F-89C5-9C52AAA42760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3C8D1BA-7A6F-4F5F-89C5-9C52AAA42760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3C8D1BA-7A6F-4F5F-89C5-9C52AAA42760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5C7FFEE-432A-49A5-B0FC-24AFAA9B9413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C7FFEE-432A-49A5-B0FC-24AFAA9B9413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C7FFEE-432A-49A5-B0FC-24AFAA9B9413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5C7FFEE-432A-49A5-B0FC-24AFAA9B9413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{704595E1-6112-4406-8E9D-D1C03EC1C2F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{704595E1-6112-4406-8E9D-D1C03EC1C2F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{704595E1-6112-4406-8E9D-D1C03EC1C2F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{704595E1-6112-4406-8E9D-D1C03EC1C2F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
